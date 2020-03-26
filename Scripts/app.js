@@ -149,13 +149,20 @@ let app;
         
     }
 
+    function activateTaskList()   
+    {
+        document.getElementById("taskListButton").addEventListener("click", function(){
+            LoadPageContent("mainContent", "./Views/content/tasklist.html",DisplayTaskList);
+        });
+    }
+
     function DisplayHomePageContent()
     {
         document.title = "WEBD6201 - Home";
 
        LoadPageContent("mainHeader","./Views/partials/header.html", activateNavbar, "home");
 
-       LoadPageContent("mainContent", "./Views/content/home.html");
+       LoadPageContent("mainContent", "./Views/content/home.html",activateTaskList);
 
        LoadPageContent("mainFooter","./Views/partials/footer.html");
        
@@ -204,10 +211,7 @@ let app;
                         newRow.innerHTML = newItem;
 
                         productsBody.appendChild(newRow);
-                    }
-
-                    
-
+                    }                   
                 }
             });
         
@@ -348,8 +352,6 @@ let app;
             {
                 clearForm();
             }
-
-            
         });
     }
 
@@ -372,7 +374,6 @@ let app;
             $("#logout").show();
 
         });
-
     }
 
     function DisplayRegisterContent()
@@ -437,8 +438,6 @@ let app;
     {
        
     }
-    
-    
 
     window.addEventListener("load", Start);
 })(app || (app = {}));
