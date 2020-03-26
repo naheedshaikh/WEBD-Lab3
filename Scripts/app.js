@@ -126,7 +126,7 @@ let app;
                 switch(child.id)
                 {
                     case "home":
-                        LoadPageContent("mainContent", "./Views/content/home.html");
+                        LoadPageContent("mainContent", "./Views/content/home.html",activateTaskList);
                         break;
                     case "products":
                         LoadPageContent("mainContent", "./Views/content/products.html", DisplayProductsContent);
