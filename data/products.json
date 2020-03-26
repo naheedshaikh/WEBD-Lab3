@@ -1,0 +1,33 @@
+{
+    "products":
+    [
+        {
+            "productID": "A1",
+            "productName": "Widget X",
+            "developer": "Developer X",
+            "description": "This small widget creates excitement",
+            "price": 9.99
+        },
+        {
+            "productID": "A2",
+            "productName": "Dune",
+            "developer": "Frank Herbert",
+            "description": "The spice must flow...",
+            "price": 1.99
+        },
+        {
+            "productID": "A3",
+            "productName": "Star Wars",
+            "developer": "George Lucas",
+            "description": "In a Galaxy far, far away",
+            "price": 15.99
+        },
+        {
+            "productID": "A4",
+            "productName": "I am not okay with this",
+            "developer": "Netflix",
+            "description": "A weird show about a girl with super powers",
+            "price": 0.99
+        }
+    ]
+}

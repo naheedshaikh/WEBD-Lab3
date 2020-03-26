@@ -1,0 +1,54 @@
+<!-- Main Content -->
+<div class="row">
+    <div class="offset-md-3 col-md-6 col-sm-12">
+          <div class="jumbotron" id="contentArea">
+              <h1 class="display-4">Contact Me.</h1>
+              <div id="errorMessage" class="alert alert-danger">
+                This is where the error message goes...
+              </div>
+              <form id="contactForm" novalidate>
+                <div class="form-group">
+                  <label for="contactName">Full Name:</label>
+                  <input type="text" class="form-control" id="contactName" name="contactName"  required
+                  value="" placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                  <label for="emailAddress">Email Address</label>
+                  <input type="email" class="form-control" id="emailAddress" name="emailAddress" required
+                  value="" placeholder="Enter your email address: name@example.com">
+                </div>
+
+                <div class="form-group">
+                  <label for="contactNumber">Contact Number:</label>
+                  <input type="tel" class="form-control" id="contactNumber" name="contactNumber"  required
+                  value="" placeholder="Enter your telephone number: (###) ###-####">
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage">Your Message</label>
+                  <textarea class="form-control" id="contactMessage" rows="3" name="contactMessage"  required
+                  value="" placeholder="Enter Your Message Here..."
+                  ></textarea>
+                </div>
+                
+                <button id="resetButton" type="reset" class="btn btn-secondary">Reset</button>
+                <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <aside>
+          
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Social Media</h5>
+            <p class="card-text">My Connections:</p>
+            Facebook : <a href=""><i class="card-link fab fa-facebook-square"></i></a>
+            LinkedIn : <a href=""><i class="card-link fab fa-linkedin"></i></a>
+            Instagram: <a href=""><i class="card-link fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </aside>
+    </div>
+</div>

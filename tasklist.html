@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS SECTION-->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/vader/jquery-ui.css">
+    <link rel="stylesheet" href="./Content/app.css">
+    <title>WEBD6201 - Test 2</title>
+</head>
+<body>
+    <!-- Main Nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">WEBD6201</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li id="home" class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-igloo"></i> Home</a></li>
+            <li id="products" class="nav-item"><a class="nav-link" href="products.html"><i class="fas fa-map"></i> Products</a></li>
+            <li id="services" class="nav-item"><a class="nav-link" href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+            <li id="about" class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li id="contact" class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-mobile-alt"></i> Contact Us</a></li>
+            <li id="login" class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+          </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="container" id="mainContent">
+        <div class="row">
+          <div class="offset-md-3 col-md-6 col-sm-12">
+                <div class="login" id="contentArea">
+                    <h1 class="display-4">Task List</h1>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Task</span>
+                      </div>
+                      <input type="text" class="form-control" id="taskTextInput" placeholder="Enter New Task">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button" id="newTaskButton"><i class="fas fa-plus-circle"></i></button>
+                      </div>
+                    </div>
+                    <ul class="list-group list-group-flush" id="taskList">
+                      <li class="list-group-item" id="task">
+                        <span id="taskText">Example Task 1</span>
+                        <span class="float-right">
+                          <button class="btn btn-outline-primary btn-sm editButton"><i class="fas fa-edit"></i>
+                          <button class="btn btn-outline-danger btn-sm deleteButton"><i class="fas fa-trash-alt"></i></button>
+                        </span>
+                        <input type="text" class="form-control edit-task editTextInput">
+                      </li>
+
+                      <li class="list-group-item" id="task">
+                        <span id="taskText">Example Task 2</span>
+                        <span class="float-right">
+                          <button class="btn btn-outline-primary btn-sm editButton"><i class="fas fa-edit"></i>
+                          <button class="btn btn-outline-danger btn-sm deleteButton"><i class="fas fa-trash-alt"></i></button>
+                        </span>
+                        <input type="text" class="form-control edit-task editTextInput">
+                      </li>
+                    </ul>
+                </div>
+          </div>
+      </div>
+      </main>
+
+      <footer>
+        <nav class="navbar fixed-bottom navbar-light bg-light">
+          <h4 class="display-6">&copy; CopyRight 2020.</h4>
+        </nav>
+      </footer>
+
+    <!-- SCRIPT SECTION -->
+    <!-- 3rd Party Libraries -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- App Scripts -->
+    <script src="./Scripts/app.js"></script>
+</body>
+</html>
