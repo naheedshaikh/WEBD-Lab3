@@ -1,3 +1,11 @@
+/**
+* Name: Naheed Shaikh
+* Stdent Id: 100713081
+* Description: Lab 3 - Fun With Ajax
+* Date Completed: 26-MAR-2020 
+* Source Code:https://github.com/durhamprogrammer/WEBD6201-W2020-Lab3.git
+* My Github Link: https://github.com/naheedshaikh/WEBD-Lab3.git
+*/
 class Contact
 {
     constructor(contactName = "", emailAddress = "", contactNumber = "", contactMessage = "")
@@ -149,6 +157,7 @@ let app;
         
     }
 
+    // event listener for tasklist Button 
     function activateTaskList()   
     {
         document.getElementById("taskListButton").addEventListener("click", function(){
